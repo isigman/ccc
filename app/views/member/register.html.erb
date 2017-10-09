@@ -1,0 +1,7 @@
+<h2>Club Member Registration</h2>
+
+<%= form_tag({:method => :post}) do %>
+    <%= text_field_tag :fsuid, nil, placeholder:"Enter FSU ID (ex. ab16c)" %>
+    <%= text_field_tag :wallet_address, nil, placeholder:"Enter your btc wallet address\n"%>
+    <%= submit_tag("Submit") %>
+<% end %>
